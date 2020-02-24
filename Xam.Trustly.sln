@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xam.Trustly.iOS", "src\Xam.Trustly.iOS\Xam.Trustly.iOS.csproj", "{24D92262-567E-436F-951B-5850B5C64B0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xam.Trustly.Droid", "src\Xam.Trustly.Droid\Xam.Trustly.Droid.csproj", "{3580FEC7-2607-4CB2-9E68-FB97CE356A31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{24D92262-567E-436F-951B-5850B5C64B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24D92262-567E-436F-951B-5850B5C64B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24D92262-567E-436F-951B-5850B5C64B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3580FEC7-2607-4CB2-9E68-FB97CE356A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3580FEC7-2607-4CB2-9E68-FB97CE356A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3580FEC7-2607-4CB2-9E68-FB97CE356A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3580FEC7-2607-4CB2-9E68-FB97CE356A31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
