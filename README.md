@@ -6,6 +6,8 @@ Trustly payments for Xamarin.Android and Xamarin.iOS
 
 ## iOS
 
+Setup WKWebView:
+
 ```cs
 public override void ViewDidLoad()
 {
@@ -31,6 +33,10 @@ Also you can see [native README](native/trustly-framework-ios)
 
 ## Android
 
+### Step 1
+
+Setup WebView:
+
 ```cs
 protected override void OnCreate(Bundle savedInstanceState)
 {
@@ -38,9 +44,9 @@ protected override void OnCreate(Bundle savedInstanceState)
     SetContentView(Resource.Layout.activity_main);
 
     // Get WebView & WebSettings
-    WebView myWebView = FindViewById<WebView>(Resource.Id.webview);
+    var myWebView = FindViewById<WebView>(Resource.Id.webview);
     myWebView.SetWebViewClient(new WebViewClient());
-    WebSettings webSettings = myWebView.Settings;
+    var webSettings = myWebView.Settings;
 
     // Enable javascript and DOM Storage
     webSettings.JavaScriptEnabled = true;
@@ -52,6 +58,10 @@ protected override void OnCreate(Bundle savedInstanceState)
         TrustlyJavascriptInterface.NAME);
 }
 ```
+
+### Step 2
+
+Add to the Android project reference to the `Mono.Android.Export.dll` (**Android Project > References > Add reference... > All > Select Mono.Android.Export > OK**)
 
 Also you can see [native README](native/trustly-library-android)
 
